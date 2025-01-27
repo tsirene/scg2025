@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Gestão de Gás</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="menu">
+            <button data-screen="dashboard" tabindex="1" onclick="sistema.showScreen('dashboard')">Dashboard</button>
+            <button data-screen="clientes" tabindex="2" onclick="sistema.showScreen('clientes')">Clientes</button>
+            <button data-screen="produtos" tabindex="3" onclick="sistema.showScreen('produtos')">Produtos</button>
+            <button data-screen="vendas" tabindex="4" onclick="sistema.showScreen('vendas')">Vendas</button>
+            <button data-screen="relatorios" tabindex="5" onclick="sistema.showScreen('relatorios')">Relatórios</button>
+            <button data-screen="configuracoes" tabindex="6" onclick="sistema.showScreen('configuracoes')">Configurações</button>
+        </div>
+        
+        <div id="content" tabindex="7">
+            <!-- Conteúdo dinâmico será carregado aqui -->
+        </div>
+    </div>
+
+    <div id="notification" class="notification"></div>
+
+    <script src="keyboard-nav.js" type="module"></script>
+    <script src="app.js" type="module"></script>
+</body>
+</html>

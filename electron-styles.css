@@ -1,0 +1,46 @@
+/* electron-styles.css */
+* {
+    transition: all 0.2s ease-in-out;
+}
+
+*:focus {
+    outline: 2px solid #007bff !important;
+    outline-offset: 2px !important;
+}
+
+button,
+input,
+select,
+textarea,
+[role="button"],
+[role="tab"],
+.tab,
+.nav-item {
+    position: relative !important;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+[role="button"]:hover,
+[role="tab"]:hover,
+.tab:hover,
+.nav-item:hover {
+    background-color: rgba(0,123,255,0.1) !important;
+    cursor: pointer !important;
+}
+
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+[role="button"]:focus,
+[role="tab"]:focus {
+    box-shadow: 0 0 0 2px rgba(0,123,255,0.25) !important;
+    border-color: #007bff !important;
+}
+
+.active,
+[aria-selected="true"] {
+    border-bottom: 2px solid #007bff !important;
+}
